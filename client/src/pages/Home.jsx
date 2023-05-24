@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(getPostsAction());
-  },[]);
+  },[dispatch]);
   
   const {posts} = useSelector(state => state.posts);
 
