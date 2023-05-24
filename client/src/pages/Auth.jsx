@@ -21,7 +21,6 @@ const Auth = () => {
       dispatch(loginAction(authData))
     }
   }
-  console.log("authData",authData)
   return (
     <div className='w-full h-screen bg-gray-200 flex items-center justify-center fixed top-0 right-0 left-0 bottom-0 z-50'>
      <div className='w-1/3 bg-white p-3'>

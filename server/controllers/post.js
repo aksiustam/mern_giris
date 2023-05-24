@@ -5,7 +5,7 @@ const getPosts = async(req,res) => {
     try {
         const getPost = await PostSchema.find();
         
-        res.status(200).json(getPosts)
+        res.status(200).json(getPost)
     
     
     } catch (error) {

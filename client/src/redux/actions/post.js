@@ -6,6 +6,7 @@ export const getPostsAction = () => async(dispatch) => {
         const {data} = await axios.get('http://localhost:5000/getPosts')
         
         dispatch({type:'GET_POSTS',payload: data})
+        
     
     } catch (error) {
         toast(error.response.data.msg, {

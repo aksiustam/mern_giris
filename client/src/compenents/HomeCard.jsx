@@ -21,7 +21,7 @@ const HomeCard = ({ post }) => {
     }
 
   return (
-    <div className="relative w-1/4 border p-3 rounded-md bg-gray-50 mx-5">
+    <div className="relative w-1/4 border p-3 rounded-md bg-gray-50 m-5">
       <div className="font-bold text-xl">{post?.title}</div>
       <div className="text-gray-700 text-sm">{post?.description}</div>
       <div className="flex items-center justify-between mt-4">

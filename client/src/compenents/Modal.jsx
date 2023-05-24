@@ -10,9 +10,6 @@ const Modal = () => {
   const dispatch = useDispatch();
   const {modal} = useSelector(state => state.modal)
 
-
-
-
   const onChangeFunc = (e) => {
     setPostData({...postData, [e.target.name]: e.target.value})
   }
@@ -24,8 +21,6 @@ const Modal = () => {
     else{
       dispatch(createPostAction(postData));
     }
-
-    
     dispatch({type:'MODAL', payload: false})
     toast("Ekleme iştemi başarılı", {
       position: "top-right",
